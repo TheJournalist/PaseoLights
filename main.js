@@ -8,7 +8,7 @@ var io = require('socket.io')(server); //Socket.IO Library
 
 var blinkInterval = 1000; //set default blink interval to 1000 milliseconds (1 second)
 var ledState = 1; //set default LED state
-var ngrokURL = 'paseolights'; //public URL created by ngrok
+var ngrokURL = ''; //public URL created by ngrok
 
 var myLed = new m.Gpio(13); //LED hooked up to digital pin 13
 myLed.dir(m.DIR_OUT); //set the gpio direction to output
